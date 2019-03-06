@@ -9,7 +9,11 @@ describe('</Dashboard />', () => {
         const { getByText } = render(<Dashboard />)
         expect(getByText(/ball/i)).toBeInTheDocument();
         expect(getByText(/strike/i)).toBeInTheDocument();
-        expect(getByText(/out/i)).toBeInTheDocument();
+        expect(getByText(/foul/i)).toBeInTheDocument();
         expect(getByText(/hit/i)).toBeInTheDocument();
     }) 
+
+    it('fires strike function when strike is clicked', () => {
+     
+    })
 })
