@@ -13,7 +13,8 @@ class App extends Component {
   ball = () => {
     if (this.state.balls === 3) {
       this.setState({
-        balls: 0
+        balls: 0,
+        strikes: 0
       })
     } else {
       this.setState({
@@ -25,6 +26,7 @@ class App extends Component {
   strike = () => {
     if (this.state.strikes === 2) {
       this.setState({
+        balls: 0,
         strikes: 0
       })
     } else {
